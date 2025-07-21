@@ -3,17 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aplikasi Presensi - SMP Negeri 10</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; }
-        .calendar-day { transition: all 0.2s ease; }
-        .calendar-day:hover { transform: scale(1.05); }
-        .attendance-badge { animation: fadeIn 0.3s ease; }
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
-    </style>
+    <title>Sistem Presensi Siswa</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyCJEOJ9Ra_qr39SyB8wK5oY2hPFvT5Y6VI",
+    authDomain: "presensisiswajanuar.firebaseapp.com",
+    projectId: "presensisiswajanuar",
+    storageBucket: "presensisiswajanuar.firebasestorage.app",
+    messagingSenderId: "482569707127",
+    appId: "1:482569707127:web:e9a2d2204ee1a33bb7f072",
+    databaseURL: "https://presensisiswajanuar-default-rtdb.asia-southeast1.firebasedatabase.app/"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
 </head>
+<body>
 <body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
     <!-- Header -->
     <header class="bg-white shadow-lg border-b-4 border-blue-600">
@@ -371,626 +387,469 @@
             </form>
         </div>
     </div>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyCJEOJ9Ra_qr39SyB8wK5oY2hPFvT5Y6VI",
+    authDomain: "presensisiswajanuar.firebaseapp.com",
+    projectId: "presensisiswajanuar",
+    storageBucket: "presensisiswajanuar.firebasestorage.app",
+    messagingSenderId: "482569707127",
+    appId: "1:482569707127:web:e9a2d2204ee1a33bb7f072",
+    databaseURL: "https://presensisiswajanuar-default-rtdb.asia-southeast1.firebasedatabase.app/"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
+</body>
     <script>
-        // Data Storage
-        let students = [
-            {id: 1, name: 'Ahmad Rizki Pratama', class: '7A', nis: '2024001'},
-            {id: 2, name: 'Siti Nurhaliza', class: '7A', nis: '2024002'},
-            {id: 3, name: 'Budi Santoso', class: '7B', nis: '2024003'},
-            {id: 4, name: 'Dewi Sartika', class: '7C', nis: '2024004'},
-            {id: 5, name: 'Eko Prasetyo', class: '7D', nis: '2024005'},
-            {id: 6, name: 'Fatimah Azzahra', class: '7E', nis: '2024006'},
-            {id: 7, name: 'Galih Permana', class: '7F', nis: '2024007'},
-            {id: 8, name: 'Hana Safitri', class: '7G', nis: '2024008'},
-            {id: 9, name: 'Indra Gunawan', class: '7H', nis: '2024009'},
-            {id: 10, name: 'Jihan Amelia', class: '7I', nis: '2024010'},
-            {id: 11, name: 'Krisna Wijaya', class: '7J', nis: '2024011'},
-            {id: 12, name: 'Laila Sari', class: '8A', nis: '2024012'},
-            {id: 13, name: 'Muhammad Fadli', class: '8B', nis: '2024013'},
-            {id: 14, name: 'Nadia Putri', class: '8C', nis: '2024014'},
-            {id: 15, name: 'Omar Hakim', class: '8D', nis: '2024015'},
-            {id: 16, name: 'Putri Maharani', class: '8E', nis: '2024016'},
-            {id: 17, name: 'Qori Ananda', class: '8F', nis: '2024017'},
-            {id: 18, name: 'Rafi Maulana', class: '8G', nis: '2024018'},
-            {id: 19, name: 'Sari Dewi', class: '8H', nis: '2024019'},
-            {id: 20, name: 'Taufik Rahman', class: '8I', nis: '2024020'},
-            {id: 21, name: 'Ulfa Hasanah', class: '8J', nis: '2024021'},
-            {id: 22, name: 'Vina Anggraini', class: '9A', nis: '2024022'},
-            {id: 23, name: 'Wahyu Setiawan', class: '9B', nis: '2024023'},
-            {id: 24, name: 'Xenia Kartika', class: '9C', nis: '2024024'},
-            {id: 25, name: 'Yusuf Ibrahim', class: '9D', nis: '2024025'},
-            {id: 26, name: 'Zahra Fitria', class: '9E', nis: '2024026'},
-            {id: 27, name: 'Arif Budiman', class: '9F', nis: '2024027'},
-            {id: 28, name: 'Bella Kusuma', class: '9G', nis: '2024028'},
-            {id: 29, name: 'Citra Melati', class: '9H', nis: '2024029'},
-            {id: 30, name: 'Dani Pratama', class: '9I', nis: '2024030'},
-            {id: 31, name: 'Eka Sari', class: '9J', nis: '2024031'}
-        ];
+    // --- Data Storage (Sekarang akan dikelola oleh Firebase) ---
+    // Hapus atau abaikan inisialisasi students dan attendance di sini
+    // karena akan dimuat dari Firebase.
 
-        let attendance = {}; // Format: {date: {studentId: status}}
-        let currentDate = new Date();
-        let selectedDate = new Date();
-        let currentMonth = new Date().getMonth();
-        let currentYear = new Date().getFullYear();
+    // Variabel ini akan menyimpan data setelah dimuat dari Firebase
+    let students = [];
+    let attendance = {};
 
-        // Initialize
-        document.addEventListener('DOMContentLoaded', function() {
-            updateDateTime();
-            setInterval(updateDateTime, 1000);
-            generateCalendar();
-            updateSelectedDate();
-            loadPresensiList();
-            loadStudentTable();
-            setupEventListeners();
-            
-            // Set default date range for reports
-            const today = new Date();
-            const firstDay = new Date(today.getFullYear(), today.getMonth(), 1);
-            document.getElementById('startDate').value = firstDay.toISOString().split('T')[0];
-            document.getElementById('endDate').value = today.toISOString().split('T')[0];
+    // --- Variabel Waktu dan Tanggal (tetap sama) ---
+    let currentDate = new Date();
+    let selectedDate = new Date();
+    let currentMonth = new Date().getMonth();
+    let currentYear = new Date().getFullYear();
+
+    // --- Fungsi Firebase (Pengganti Local Storage) ---
+
+    // Dapatkan referensi ke "nodes" atau "jalur" data di database
+    const studentsRef = database.ref('students');
+    const attendanceRef = database.ref('attendance');
+
+    function saveStudentsToFirebase() {
+        // Menggunakan studentsRef.set() akan menimpa seluruh data students.
+        // Untuk data yang lebih besar, pertimbangkan struktur data yang berbeda atau update().
+        studentsRef.set(students)
+            .then(() => console.log("Students data saved to Firebase."))
+            .catch(error => console.error("Error saving students data:", error));
+    }
+
+    function loadStudentsFromFirebase() {
+        // Mendengarkan perubahan data secara real-time
+        studentsRef.on('value', (snapshot) => {
+            const data = snapshot.val();
+            if (data) {
+                // Firebase mengembalikan objek, kita perlu mengubahnya kembali menjadi array jika disimpan sebagai array.
+                // Jika Anda menyimpan sebagai objek { id: { ... } }, logikanya akan berbeda.
+                // Asumsi data students disimpan sebagai array di Firebase.
+                students = Object.values(data); // Mengonversi objek menjadi array
+                // Pastikan students memiliki ID unik yang berurutan jika Anda menambahkannya tanpa ID dari sisi klien
+                students.sort((a, b) => a.id - b.id);
+            } else {
+                students = [];
+                // Jika tidak ada data siswa, Anda bisa memuat data default awal jika diinginkan,
+                // tapi biasanya Anda akan mengisi data ini melalui UI.
+            }
+            loadStudentTable(); // Perbarui tabel siswa setelah data dimuat
+            loadPresensiList(); // Perbarui daftar presensi juga
+        }, (error) => {
+            console.error("Error loading students data:", error);
         });
+    }
 
-        function updateDateTime() {
-            const now = new Date();
-            const dateOptions = { 
-                weekday: 'long', 
-                year: 'numeric', 
-                month: 'long', 
-                day: 'numeric' 
-            };
-            const timeOptions = { 
-                hour: '2-digit', 
-                minute: '2-digit', 
-                second: '2-digit' 
-            };
-            
-            document.getElementById('currentDate').textContent = now.toLocaleDateString('id-ID', dateOptions);
-            document.getElementById('currentTime').textContent = now.toLocaleTimeString('id-ID', timeOptions);
-        }
+    function saveAttendanceToFirebase() {
+        attendanceRef.set(attendance)
+            .then(() => console.log("Attendance data saved to Firebase."))
+            .catch(error => console.error("Error saving attendance data:", error));
+    }
 
-        function showTab(tabName) {
-            // Hide all tab contents
-            document.querySelectorAll('.tab-content').forEach(content => {
-                content.classList.add('hidden');
-            });
-            
-            // Remove active class from all tabs
-            document.querySelectorAll('[id^="tab-"]').forEach(tab => {
-                tab.classList.remove('text-blue-600', 'border-blue-600', 'bg-blue-50');
-                tab.classList.add('text-gray-600');
-            });
-            
-            // Show selected tab content
-            document.getElementById(`content-${tabName}`).classList.remove('hidden');
-            
-            // Add active class to selected tab
-            const activeTab = document.getElementById(`tab-${tabName}`);
-            activeTab.classList.add('text-blue-600', 'border-blue-600', 'bg-blue-50');
-            activeTab.classList.remove('text-gray-600');
-        }
-
-        function generateCalendar() {
-            const monthNames = [
-                'Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni',
-                'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'
-            ];
-            
-            document.getElementById('monthYear').textContent = `${monthNames[currentMonth]} ${currentYear}`;
-            
-            const firstDay = new Date(currentYear, currentMonth, 1);
-            const lastDay = new Date(currentYear, currentMonth + 1, 0);
-            const startDate = new Date(firstDay);
-            startDate.setDate(startDate.getDate() - firstDay.getDay());
-            
-            const calendarDays = document.getElementById('calendarDays');
-            calendarDays.innerHTML = '';
-            
-            for (let i = 0; i < 42; i++) {
-                const date = new Date(startDate);
-                date.setDate(startDate.getDate() + i);
-                
-                const dayElement = document.createElement('div');
-                dayElement.className = 'calendar-day p-2 cursor-pointer rounded-lg hover:bg-blue-100';
-                
-                if (date.getMonth() !== currentMonth) {
-                    dayElement.className += ' text-gray-400';
-                } else {
-                    dayElement.className += ' text-gray-700 hover:text-blue-600';
-                }
-                
-                if (date.toDateString() === new Date().toDateString()) {
-                    dayElement.className += ' bg-blue-600 text-white hover:bg-blue-700';
-                }
-                
-                if (date.toDateString() === selectedDate.toDateString()) {
-                    dayElement.className += ' ring-2 ring-blue-400';
-                }
-                
-                dayElement.textContent = date.getDate();
-                dayElement.onclick = () => selectDate(date);
-                
-                calendarDays.appendChild(dayElement);
+    function loadAttendanceFromFirebase() {
+        attendanceRef.on('value', (snapshot) => {
+            const data = snapshot.val();
+            if (data) {
+                attendance = data;
+            } else {
+                attendance = {};
             }
+            loadPresensiList(); // Perbarui daftar presensi setelah data dimuat
+        }, (error) => {
+            console.error("Error loading attendance data:", error);
+        });
+    }
+
+    // --- Inisialisasi Aplikasi ---
+    document.addEventListener('DOMContentLoaded', function() {
+        // Muat data dari Firebase sebelum inisialisasi tampilan
+        loadStudentsFromFirebase(); // Ini akan memperbarui `students` dan memanggil `loadStudentTable()` & `loadPresensiList()`
+        loadAttendanceFromFirebase(); // Ini akan memperbarui `attendance` dan memanggil `loadPresensiList()`
+
+        updateDateTime();
+        setInterval(updateDateTime, 1000);
+        generateCalendar();
+        updateSelectedDate();
+        // loadPresensiList() dan loadStudentTable() sudah dipanggil oleh listener Firebase
+        setupEventListeners();
+        
+        // Set default date range for reports
+        const today = new Date();
+        const firstDay = new Date(today.getFullYear(), today.getMonth(), 1);
+        document.getElementById('startDate').value = firstDay.toISOString().split('T')[0];
+        document.getElementById('endDate').value = today.toISOString().split('T')[0];
+    });
+
+    // ... (Fungsi updateDateTime, showTab, generateCalendar, selectDate, updateSelectedDate,
+    //      previousMonth, nextMonth TETAP SAMA) ...
+
+    function loadPresensiList() {
+        const dateKey = selectedDate.toISOString().split('T')[0];
+        const kelasFilter = document.getElementById('kelasFilter').value;
+        const presensiList = document.getElementById('presensiList');
+        
+        let filteredStudents = students;
+        if (kelasFilter) {
+            filteredStudents = students.filter(student => student.class === kelasFilter);
+        }
+        
+        presensiList.innerHTML = '';
+        
+        if (filteredStudents.length === 0) {
+            presensiList.innerHTML = '<p class="text-center text-gray-500 py-8">Tidak ada siswa ditemukan untuk kelas ini. Tambahkan siswa di tab "Data Siswa".</p>';
+            return;
         }
 
-        function selectDate(date) {
-            selectedDate = new Date(date);
-            generateCalendar();
-            updateSelectedDate();
-            loadPresensiList();
-        }
-
-        function updateSelectedDate() {
-            const options = { 
-                weekday: 'long', 
-                year: 'numeric', 
-                month: 'long', 
-                day: 'numeric' 
-            };
-            document.getElementById('selectedDate').textContent = selectedDate.toLocaleDateString('id-ID', options);
-        }
-
-        function previousMonth() {
-            currentMonth--;
-            if (currentMonth < 0) {
-                currentMonth = 11;
-                currentYear--;
-            }
-            generateCalendar();
-        }
-
-        function nextMonth() {
-            currentMonth++;
-            if (currentMonth > 11) {
-                currentMonth = 0;
-                currentYear++;
-            }
-            generateCalendar();
-        }
-
-        function loadPresensiList() {
-            const dateKey = selectedDate.toISOString().split('T')[0];
-            const kelasFilter = document.getElementById('kelasFilter').value;
-            const presensiList = document.getElementById('presensiList');
+        filteredStudents.forEach(student => {
+            // Perhatikan bahwa attendance[dateKey] mungkin undefined jika tidak ada presensi untuk tanggal tersebut
+            const currentAttendance = attendance[dateKey]?.[student.id] || 'hadir'; // Default hadir
             
-            let filteredStudents = students;
-            if (kelasFilter) {
-                filteredStudents = students.filter(student => student.class === kelasFilter);
-            }
-            
-            presensiList.innerHTML = '';
-            
-            filteredStudents.forEach(student => {
-                const currentAttendance = attendance[dateKey]?.[student.id] || 'hadir';
-                
-                const item = document.createElement('div');
-                item.className = 'flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-gray-50';
-                item.innerHTML = `
-                    <div class="flex items-center space-x-4">
-                        <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
-                            <span class="text-blue-600 font-semibold">${student.name.charAt(0)}</span>
-                        </div>
-                        <div>
-                            <h4 class="font-medium text-gray-800">${student.name}</h4>
-                            <p class="text-sm text-gray-600">Kelas ${student.class} • NIS: ${student.nis}</p>
-                        </div>
+            const item = document.createElement('div');
+            item.className = 'flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-gray-50';
+            item.innerHTML = `
+                <div class="flex items-center space-x-4">
+                    <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                        <span class="text-blue-600 font-semibold">${student.name.charAt(0)}</span>
                     </div>
-                    <div class="flex space-x-2">
-                        <button onclick="setAttendance(${student.id}, 'hadir')" 
-                                class="px-4 py-2 rounded-lg font-medium transition-colors ${currentAttendance === 'hadir' ? 'bg-green-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-green-100'}">
-                            ✓ Hadir
-                        </button>
-                        <button onclick="setAttendance(${student.id}, 'sakit')" 
-                                class="px-4 py-2 rounded-lg font-medium transition-colors ${currentAttendance === 'sakit' ? 'bg-yellow-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-yellow-100'}">
-                            🤒 Sakit
-                        </button>
-                        <button onclick="setAttendance(${student.id}, 'izin')" 
-                                class="px-4 py-2 rounded-lg font-medium transition-colors ${currentAttendance === 'izin' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-blue-100'}">
-                            📝 Izin
-                        </button>
-                        <button onclick="setAttendance(${student.id}, 'alpha')" 
-                                class="px-4 py-2 rounded-lg font-medium transition-colors ${currentAttendance === 'alpha' ? 'bg-red-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-red-100'}">
-                            ❌ Alpha
-                        </button>
+                    <div>
+                        <h4 class="font-medium text-gray-800">${student.name}</h4>
+                        <p class="text-sm text-gray-600">Kelas ${student.class} • NIS: ${student.nis}</p>
                     </div>
-                `;
-                presensiList.appendChild(item);
-            });
+                </div>
+                <div class="flex space-x-2">
+                    <button onclick="setAttendance(${student.id}, 'hadir')" 
+                            class="px-4 py-2 rounded-lg font-medium transition-colors ${currentAttendance === 'hadir' ? 'bg-green-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-green-100'}">
+                        ✓ Hadir
+                    </button>
+                    <button onclick="setAttendance(${student.id}, 'sakit')" 
+                            class="px-4 py-2 rounded-lg font-medium transition-colors ${currentAttendance === 'sakit' ? 'bg-yellow-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-yellow-100'}">
+                        🤒 Sakit
+                    </button>
+                    <button onclick="setAttendance(${student.id}, 'izin')" 
+                            class="px-4 py-2 rounded-lg font-medium transition-colors ${currentAttendance === 'izin' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-blue-100'}">
+                        📝 Izin
+                    </button>
+                    <button onclick="setAttendance(${student.id}, 'alpha')" 
+                            class="px-4 py-2 rounded-lg font-medium transition-colors ${currentAttendance === 'alpha' ? 'bg-red-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-red-100'}">
+                        ❌ Alpha
+                    </button>
+                </div>
+            `;
+            presensiList.appendChild(item);
+        });
+    }
+
+    function setAttendance(studentId, status) {
+        const dateKey = selectedDate.toISOString().split('T')[0];
+        // Kita langsung set di path spesifik di Firebase
+        database.ref(`attendance/${dateKey}/${studentId}`).set(status)
+            .then(() => console.log(`Attendance for student ${studentId} on ${dateKey} set to ${status}`))
+            .catch(error => console.error("Error setting attendance:", error));
+        // loadPresensiList() akan dipanggil otomatis oleh listener Firebase
+    }
+
+    // Fungsi `saveAttendance` asli Anda bisa dihapus atau diubah jika tidak diperlukan lagi
+    // Sekarang penyimpanan dilakukan otomatis setiap kali `setAttendance` dipanggil
+    function saveAttendance() {
+        const dateKey = selectedDate.toISOString().split('T')[0];
+        alert(`Presensi untuk tanggal ${dateKey} telah disimpan dan disinkronkan ke Firebase!`);
+    }
+
+    function resetAttendance() {
+        const dateKey = selectedDate.toISOString().split('T')[0];
+        // Hapus node presensi untuk tanggal tertentu di Firebase
+        database.ref(`attendance/${dateKey}`).remove()
+            .then(() => {
+                console.log(`Attendance for ${dateKey} reset.`);
+                alert(`Presensi untuk tanggal ${dateKey} telah direset!`);
+            })
+            .catch(error => console.error("Error resetting attendance:", error));
+        // loadPresensiList() akan dipanggil otomatis oleh listener Firebase
+    }
+
+    function loadStudentTable() {
+        const searchTerm = document.getElementById('searchStudent')?.value.toLowerCase() || '';
+        const classFilter = document.getElementById('classFilter')?.value || '';
+        const tbody = document.getElementById('studentTableBody');
+        
+        let filteredStudents = students.filter(student => {
+            const matchesSearch = student.name.toLowerCase().includes(searchTerm);
+            const matchesClass = !classFilter || student.class === classFilter;
+            return matchesSearch && matchesClass;
+        });
+        
+        tbody.innerHTML = '';
+        
+        if (filteredStudents.length === 0) {
+            tbody.innerHTML = `<tr><td colspan="5" class="px-6 py-4 text-center text-gray-500">Tidak ada siswa ditemukan.</td></tr>`;
+            return;
         }
 
-        function setAttendance(studentId, status) {
-            const dateKey = selectedDate.toISOString().split('T')[0];
-            if (!attendance[dateKey]) {
-                attendance[dateKey] = {};
-            }
-            attendance[dateKey][studentId] = status;
-            loadPresensiList();
-        }
-
-        function saveAttendance() {
-            const dateKey = selectedDate.toISOString().split('T')[0];
-            alert(`Presensi untuk tanggal ${dateKey} berhasil disimpan!`);
-        }
-
-        function resetAttendance() {
-            const dateKey = selectedDate.toISOString().split('T')[0];
-            if (attendance[dateKey]) {
-                delete attendance[dateKey];
-            }
-            loadPresensiList();
-        }
-
-        function loadStudentTable() {
-            const searchTerm = document.getElementById('searchStudent')?.value.toLowerCase() || '';
-            const classFilter = document.getElementById('classFilter')?.value || '';
-            const tbody = document.getElementById('studentTableBody');
-            
-            let filteredStudents = students.filter(student => {
-                const matchesSearch = student.name.toLowerCase().includes(searchTerm);
-                const matchesClass = !classFilter || student.class === classFilter;
-                return matchesSearch && matchesClass;
-            });
-            
-            tbody.innerHTML = '';
-            
-            filteredStudents.forEach((student, index) => {
-                const row = document.createElement('tr');
-                row.className = 'hover:bg-gray-50';
-                row.innerHTML = `
-                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">${index + 1}</td>
-                    <td class="px-6 py-4 whitespace-nowrap">
-                        <div class="flex items-center">
-                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">
-                                <span class="text-blue-600 font-semibold text-sm">${student.name.charAt(0)}</span>
-                            </div>
-                            <span class="text-sm font-medium text-gray-900">${student.name}</span>
+        filteredStudents.forEach((student, index) => {
+            const row = document.createElement('tr');
+            row.className = 'hover:bg-gray-50';
+            row.innerHTML = `
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">${index + 1}</td>
+                <td class="px-6 py-4 whitespace-nowrap">
+                    <div class="flex items-center">
+                        <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                            <span class="text-blue-600 font-semibold text-sm">${student.name.charAt(0)}</span>
                         </div>
-                    </td>
-                    <td class="px-6 py-4 whitespace-nowrap">
-                        <span class="px-2 py-1 text-xs font-medium bg-blue-100 text-blue-800 rounded-full">${student.class}</span>
-                    </td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">${student.nis}</td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm space-x-2">
-                        <button onclick="editStudent(${student.id})" class="text-blue-600 hover:text-blue-800 font-medium">Edit</button>
-                        <button onclick="deleteStudent(${student.id})" class="text-red-600 hover:text-red-800 font-medium">Hapus</button>
-                    </td>
-                `;
-                tbody.appendChild(row);
-            });
-        }
+                        <span class="text-sm font-medium text-gray-900">${student.name}</span>
+                    </div>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap">
+                    <span class="px-2 py-1 text-xs font-medium bg-blue-100 text-blue-800 rounded-full">${student.class}</span>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">${student.nis}</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm space-x-2">
+                    <button onclick="editStudent(${student.id})" class="text-blue-600 hover:text-blue-800 font-medium">Edit</button>
+                    <button onclick="deleteStudent(${student.id})" class="text-red-600 hover:text-red-800 font-medium">Hapus</button>
+                </td>
+            `;
+            tbody.appendChild(row);
+        });
+    }
 
-        function showAddStudentModal() {
-            document.getElementById('modalTitle').textContent = 'Tambah Siswa Baru';
-            document.getElementById('studentForm').reset();
-            document.getElementById('editStudentId').value = '';
+    // ... (Fungsi showAddStudentModal TETAP SAMA) ...
+
+    function editStudent(id) {
+        const student = students.find(s => s.id === id);
+        if (student) {
+            document.getElementById('modalTitle').textContent = 'Edit Data Siswa';
+            document.getElementById('editStudentId').value = student.id;
+            document.getElementById('studentName').value = student.name;
+            document.getElementById('studentClass').value = student.class;
+            document.getElementById('studentNIS').value = student.nis;
             document.getElementById('studentModal').classList.remove('hidden');
             document.getElementById('studentModal').classList.add('flex');
         }
+    }
 
-        function editStudent(id) {
-            const student = students.find(s => s.id === id);
-            if (student) {
-                document.getElementById('modalTitle').textContent = 'Edit Data Siswa';
-                document.getElementById('editStudentId').value = student.id;
-                document.getElementById('studentName').value = student.name;
-                document.getElementById('studentClass').value = student.class;
-                document.getElementById('studentNIS').value = student.nis;
-                document.getElementById('studentModal').classList.remove('hidden');
-                document.getElementById('studentModal').classList.add('flex');
-            }
+    function deleteStudent(id) {
+        const student = students.find(s => s.id === id);
+        if (!student) {
+            alert('Data siswa tidak ditemukan!');
+            return;
         }
+        
+        const confirmDelete = confirm(`Apakah Anda yakin ingin menghapus data siswa:\n\nNama: ${student.name}\nKelas: ${student.class}\nNIS: ${student.nis}\n\nData presensi siswa ini juga akan terhapus!`);
+        
+        if (confirmDelete) {
+            // Hapus siswa dari Firebase berdasarkan ID
+            // Hati-hati: Jika ID siswa Anda tidak sama dengan key di Firebase, ini perlu disesuaikan.
+            // Asumsi students disimpan sebagai array di Firebase, dan kita akan mengirim ulang seluruh array
+            // setelah modifikasi.
+            students = students.filter(s => s.id !== id);
+            saveStudentsToFirebase(); // Simpan array students yang sudah diperbarui
 
-        function deleteStudent(id) {
-            // Find student for confirmation
-            const student = students.find(s => s.id === id);
-            if (!student) {
-                alert('Data siswa tidak ditemukan!');
-                return;
-            }
-            
-            // Show confirmation dialog
-            const confirmDelete = confirm(`Apakah Anda yakin ingin menghapus data siswa:\n\nNama: ${student.name}\nKelas: ${student.class}\nNIS: ${student.nis}\n\nData presensi siswa ini juga akan terhapus!`);
-            
-            if (confirmDelete) {
-                // Remove student from array
-                students = students.filter(s => s.id !== id);
-                
-                // Remove from all attendance records
-                Object.keys(attendance).forEach(date => {
-                    if (attendance[date] && attendance[date][id]) {
-                        delete attendance[date][id];
-                    }
-                });
-                
-                // Refresh all displays immediately
-                loadStudentTable();
-                loadPresensiList();
-                
-                // Show success message
-                alert(`✅ Data ${student.name} berhasil dihapus!\n\nSiswa telah dihapus dari:\n- Daftar siswa\n- Semua data presensi`);
-            }
-        }
-
-        function closeStudentModal() {
-            document.getElementById('studentModal').classList.add('hidden');
-            document.getElementById('studentModal').classList.remove('flex');
-        }
-
-        function generateReport() {
-            const startDate = document.getElementById('startDate').value;
-            const endDate = document.getElementById('endDate').value;
-            const kelasFilter = document.getElementById('rekapKelas').value;
-            
-            if (!startDate || !endDate) {
-                alert('Silakan pilih periode tanggal terlebih dahulu!');
-                return;
-            }
-            
-            let filteredStudents = students;
-            if (kelasFilter) {
-                filteredStudents = students.filter(student => student.class === kelasFilter);
-            }
-            
-            // Generate date range
-            const dates = [];
-            const start = new Date(startDate);
-            const end = new Date(endDate);
-            
-            for (let d = new Date(start); d <= end; d.setDate(d.getDate() + 1)) {
-                dates.push(new Date(d).toISOString().split('T')[0]);
-            }
-            
-            // Generate table header
-            const headerRow = document.getElementById('rekapTableHeader');
-            headerRow.innerHTML = `
-                <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Nama</th>
-                <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Kelas</th>
-                ${dates.map(date => `<th class="px-2 py-3 text-center text-xs font-medium text-gray-500 uppercase">${new Date(date).getDate()}</th>`).join('')}
-                <th class="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase">H</th>
-                <th class="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase">S</th>
-                <th class="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase">I</th>
-                <th class="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase">A</th>
-            `;
-            
-            // Generate table body
-            const tbody = document.getElementById('rekapTableBody');
-            tbody.innerHTML = '';
-            
-            filteredStudents.forEach(student => {
-                let hadir = 0, sakit = 0, izin = 0, alpha = 0;
-                
-                const row = document.createElement('tr');
-                row.className = 'hover:bg-gray-50';
-                
-                let attendanceCells = '';
-                dates.forEach(date => {
-                    const status = attendance[date]?.[student.id] || 'hadir';
-                    let cellClass = 'px-2 py-3 text-center text-sm';
-                    let symbol = '';
-                    
-                    switch(status) {
-                        case 'hadir':
-                            cellClass += ' text-green-600';
-                            symbol = '✓';
-                            hadir++;
-                            break;
-                        case 'sakit':
-                            cellClass += ' text-yellow-600';
-                            symbol = 'S';
-                            sakit++;
-                            break;
-                        case 'izin':
-                            cellClass += ' text-blue-600';
-                            symbol = 'I';
-                            izin++;
-                            break;
-                        case 'alpha':
-                            cellClass += ' text-red-600';
-                            symbol = 'A';
-                            alpha++;
-                            break;
-                    }
-                    
-                    attendanceCells += `<td class="${cellClass}">${symbol}</td>`;
-                });
-                
-                row.innerHTML = `
-                    <td class="px-4 py-3 text-sm font-medium text-gray-900">${student.name}</td>
-                    <td class="px-4 py-3 text-sm text-gray-600">${student.class}</td>
-                    ${attendanceCells}
-                    <td class="px-4 py-3 text-center text-sm font-medium text-green-600">${hadir}</td>
-                    <td class="px-4 py-3 text-center text-sm font-medium text-yellow-600">${sakit}</td>
-                    <td class="px-4 py-3 text-center text-sm font-medium text-blue-600">${izin}</td>
-                    <td class="px-4 py-3 text-center text-sm font-medium text-red-600">${alpha}</td>
-                `;
-                tbody.appendChild(row);
+            // Hapus presensi siswa ini dari semua catatan presensi di Firebase
+            // Loop melalui setiap tanggal dan hapus entry student.id
+            const updates = {};
+            Object.keys(attendance).forEach(dateKey => {
+                if (attendance[dateKey] && attendance[dateKey][id]) {
+                    updates[`/attendance/${dateKey}/${id}`] = null; // null akan menghapus data di path tersebut
+                }
             });
-            
-            // Generate statistics
-            generateStatistics(filteredStudents, dates);
-        }
 
-        function generateStatistics(filteredStudents, dates) {
-            let totalHadir = 0, totalSakit = 0, totalIzin = 0, totalAlpha = 0;
-            
-            filteredStudents.forEach(student => {
-                dates.forEach(date => {
-                    const status = attendance[date]?.[student.id] || 'hadir';
-                    switch(status) {
-                        case 'hadir': totalHadir++; break;
-                        case 'sakit': totalSakit++; break;
-                        case 'izin': totalIzin++; break;
-                        case 'alpha': totalAlpha++; break;
-                    }
-                });
-            });
-            
-            const total = totalHadir + totalSakit + totalIzin + totalAlpha;
-            const statistik = document.getElementById('statistik');
-            
-            statistik.innerHTML = `
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="bg-green-50 p-4 rounded-lg">
-                        <div class="flex items-center justify-between">
-                            <div>
-                                <p class="text-sm text-green-600 font-medium">Total Hadir</p>
-                                <p class="text-2xl font-bold text-green-700">${totalHadir}</p>
-                            </div>
-                            <div class="text-green-600 text-2xl">✓</div>
-                        </div>
-                        <p class="text-xs text-green-600 mt-2">${total > 0 ? ((totalHadir/total)*100).toFixed(1) : 0}% dari total</p>
-                    </div>
-                    <div class="bg-yellow-50 p-4 rounded-lg">
-                        <div class="flex items-center justify-between">
-                            <div>
-                                <p class="text-sm text-yellow-600 font-medium">Total Sakit</p>
-                                <p class="text-2xl font-bold text-yellow-700">${totalSakit}</p>
-                            </div>
-                            <div class="text-yellow-600 text-2xl">🤒</div>
-                        </div>
-                        <p class="text-xs text-yellow-600 mt-2">${total > 0 ? ((totalSakit/total)*100).toFixed(1) : 0}% dari total</p>
-                    </div>
-                    <div class="bg-blue-50 p-4 rounded-lg">
-                        <div class="flex items-center justify-between">
-                            <div>
-                                <p class="text-sm text-blue-600 font-medium">Total Izin</p>
-                                <p class="text-2xl font-bold text-blue-700">${totalIzin}</p>
-                            </div>
-                            <div class="text-blue-600 text-2xl">📝</div>
-                        </div>
-                        <p class="text-xs text-blue-600 mt-2">${total > 0 ? ((totalIzin/total)*100).toFixed(1) : 0}% dari total</p>
-                    </div>
-                    <div class="bg-red-50 p-4 rounded-lg">
-                        <div class="flex items-center justify-between">
-                            <div>
-                                <p class="text-sm text-red-600 font-medium">Total Alpha</p>
-                                <p class="text-2xl font-bold text-red-700">${totalAlpha}</p>
-                            </div>
-                            <div class="text-red-600 text-2xl">❌</div>
-                        </div>
-                        <p class="text-xs text-red-600 mt-2">${total > 0 ? ((totalAlpha/total)*100).toFixed(1) : 0}% dari total</p>
-                    </div>
-                </div>
-                <div class="mt-4 p-4 bg-gray-50 rounded-lg">
-                    <p class="text-sm text-gray-600">
-                        <strong>Periode:</strong> ${document.getElementById('startDate').value} s/d ${document.getElementById('endDate').value}<br>
-                        <strong>Total Siswa:</strong> ${filteredStudents.length} siswa<br>
-                        <strong>Total Hari:</strong> ${dates.length} hari
-                    </p>
-                </div>
-            `;
-        }
-
-        function downloadCSV() {
-            const startDate = document.getElementById('startDate').value;
-            const endDate = document.getElementById('endDate').value;
-            const kelasFilter = document.getElementById('rekapKelas').value;
-            
-            if (!startDate || !endDate) {
-                alert('Silakan pilih periode tanggal dan generate laporan terlebih dahulu!');
-                return;
+            if (Object.keys(updates).length > 0) {
+                database.ref().update(updates)
+                    .then(() => {
+                        console.log("Associated attendance data removed from Firebase.");
+                        // loadAttendanceFromFirebase() akan memperbarui tampilan
+                    })
+                    .catch(error => console.error("Error removing associated attendance:", error));
+            } else {
+                 console.log("No associated attendance data to remove.");
             }
             
-            let filteredStudents = students;
-            if (kelasFilter) {
-                filteredStudents = students.filter(student => student.class === kelasFilter);
-            }
-            
-            // Generate date range
-            const dates = [];
-            const start = new Date(startDate);
-            const end = new Date(endDate);
-            
-            for (let d = new Date(start); d <= end; d.setDate(d.getDate() + 1)) {
-                dates.push(new Date(d).toISOString().split('T')[0]);
-            }
-            
-            // Create CSV content
-            let csvContent = 'Nama,Kelas,NIS,';
-            csvContent += dates.map(date => new Date(date).toLocaleDateString('id-ID')).join(',');
-            csvContent += ',Total Hadir,Total Sakit,Total Izin,Total Alpha\n';
-            
-            filteredStudents.forEach(student => {
-                let hadir = 0, sakit = 0, izin = 0, alpha = 0;
-                let attendanceRow = '';
-                
-                dates.forEach(date => {
-                    const status = attendance[date]?.[student.id] || 'hadir';
-                    switch(status) {
-                        case 'hadir':
-                            attendanceRow += 'Hadir,';
-                            hadir++;
-                            break;
-                        case 'sakit':
-                            attendanceRow += 'Sakit,';
-                            sakit++;
-                            break;
-                        case 'izin':
-                            attendanceRow += 'Izin,';
-                            izin++;
-                            break;
-                        case 'alpha':
-                            attendanceRow += 'Alpha,';
-                            alpha++;
-                            break;
-                    }
-                });
-                
-                csvContent += `${student.name},${student.class},${student.nis},${attendanceRow}${hadir},${sakit},${izin},${alpha}\n`;
-            });
-            
-            // Download CSV
-            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
-            const link = document.createElement('a');
-            const url = URL.createObjectURL(blob);
-            link.setAttribute('href', url);
-            link.setAttribute('download', `Rekap_Presensi_${startDate}_${endDate}.csv`);
-            link.style.visibility = 'hidden';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
+            // loadStudentTable() dan loadPresensiList() akan dipanggil oleh listener Firebase
+            alert(`✅ Data ${student.name} berhasil dihapus dan disinkronkan ke Firebase!`);
+        }
+    }
+
+    // ... (Fungsi closeStudentModal TETAP SAMA) ...
+
+    function generateReport() {
+        const startDate = document.getElementById('startDate').value;
+        const endDate = document.getElementById('endDate').value;
+        const kelasFilter = document.getElementById('rekapKelas').value;
+        
+        if (!startDate || !endDate) {
+            alert('Silakan pilih periode tanggal terlebih dahulu!');
+            return;
+        }
+        
+        let filteredStudents = students;
+        if (kelasFilter) {
+            filteredStudents = students.filter(student => student.class === kelasFilter);
+        }
+        
+        // Generate date range
+        const dates = [];
+        const start = new Date(startDate);
+        const end = new Date(endDate);
+        
+        for (let d = new Date(start); d <= end; d.setDate(d.getDate() + 1)) {
+            dates.push(new Date(d).toISOString().split('T')[0]);
+        }
+        
+        // Generate table header
+        const headerRow = document.getElementById('rekapTableHeader');
+        headerRow.innerHTML = `
+            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Nama</th>
+            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Kelas</th>
+            ${dates.map(date => `<th class="px-2 py-3 text-center text-xs font-medium text-gray-500 uppercase">${new Date(date).getDate()}</th>`).join('')}
+            <th class="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase">H</th>
+            <th class="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase">S</th>
+            <th class="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase">I</th>
+            <th class="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase">A</th>
+        `;
+        
+        // Generate table body
+        const tbody = document.getElementById('rekapTableBody');
+        tbody.innerHTML = '';
+        
+        if (filteredStudents.length === 0) {
+            tbody.innerHTML = `<tr><td colspan="${4 + dates.length}" class="px-6 py-4 text-center text-gray-500">Tidak ada siswa ditemukan untuk laporan ini.</td></tr>`;
+            return;
         }
 
-        function setupEventListeners() {
-            // Student form submission
-            document.getElementById('studentForm').addEventListener('submit', function(e) {
-                e.preventDefault();
+        filteredStudents.forEach(student => {
+            let hadir = 0, sakit = 0, izin = 0, alpha = 0;
+            
+            const row = document.createElement('tr');
+            row.className = 'hover:bg-gray-50';
+            
+            let attendanceCells = '';
+            dates.forEach(date => {
+                const status = attendance[date]?.[student.id] || 'hadir'; // Default hadir
+                let cellClass = 'px-2 py-3 text-center text-sm';
+                let symbol = '';
                 
-                const id = document.getElementById('editStudentId').value;
-                const name = document.getElementById('studentName').value;
-                const studentClass = document.getElementById('studentClass').value;
-                const nis = document.getElementById('studentNIS').value;
-                
-                if (id) {
-                    // Edit existing student
-                    const student = students.find(s => s.id == id);
-                    if (student) {
-                        student.name = name;
-                        student.class = studentClass;
-                        student.nis = nis;
-                    }
-                } else {
-                    // Add new student
-                    const newId = Math.max(...students.map(s => s.id)) + 1;
-                    students.push({
-                        id: newId,
-                        name: name,
-                        class: studentClass,
-                        nis: nis
-                    });
+                switch(status) {
+                    case 'hadir':
+                        cellClass += ' text-green-600';
+                        symbol = '✓';
+                        hadir++;
+                        break;
+                    case 'sakit':
+                        cellClass += ' text-yellow-600';
+                        symbol = 'S';
+                        sakit++;
+                        break;
+                    case 'izin':
+                        cellClass += ' text-blue-600';
+                        symbol = 'I';
+                        izin++;
+                        break;
+                    case 'alpha':
+                        cellClass += ' text-red-600';
+                        symbol = 'A';
+                        alpha++;
+                        break;
                 }
                 
-                loadStudentTable();
-                loadPresensiList();
-                closeStudentModal();
+                attendanceCells += `<td class="${cellClass}">${symbol}</td>`;
             });
             
-            // Search and filter functionality
-            document.getElementById('searchStudent')?.addEventListener('input', loadStudentTable);
-            document.getElementById('classFilter')?.addEventListener('change', loadStudentTable);
-            document.getElementById('kelasFilter')?.addEventListener('change', loadPresensiList);
-        }
-    </script>
+            row.innerHTML = `
+                <td class="px-4 py-3 text-sm font-medium text-gray-900">${student.name}</td>
+                <td class="px-4 py-3 text-sm text-gray-600">${student.class}</td>
+                ${attendanceCells}
+                <td class="px-4 py-3 text-center text-sm font-medium text-green-600">${hadir}</td>
+                <td class="px-4 py-3 text-center text-sm font-medium text-yellow-600">${sakit}</td>
+                <td class="px-4 py-3 text-center text-sm font-medium text-blue-600">${izin}</td>
+                <td class="px-4 py-3 text-center text-sm font-medium text-red-600">${alpha}</td>
+            `;
+            tbody.appendChild(row);
+        });
+        
+        // Generate statistics
+        generateStatistics(filteredStudents, dates);
+    }
+
+    // ... (Fungsi generateStatistics dan downloadCSV TETAP SAMA) ...
+
+    function setupEventListeners() {
+        document.getElementById('studentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const id = document.getElementById('editStudentId').value;
+            const name = document.getElementById('studentName').value;
+            const studentClass = document.getElementById('studentClass').value;
+            const nis = document.getElementById('studentNIS').value;
+            
+            if (id) {
+                // Edit existing student in Firebase
+                const studentIndex = students.findIndex(s => s.id == id);
+                if (studentIndex !== -1) {
+                    students[studentIndex].name = name;
+                    students[studentIndex].class = studentClass;
+                    students[studentIndex].nis = nis;
+                    saveStudentsToFirebase(); // Simpan seluruh array students yang sudah diperbarui
+                }
+            } else {
+                // Add new student to Firebase
+                // Firebase Realtime Database bisa otomatis membuat ID unik dengan .push().
+                // Namun, karena struktur data students Anda adalah array, kita tetap pakai ID dari sisi klien
+                // atau pertimbangkan mengubah struktur students di Firebase menjadi objek {id: {...}}
+                const newId = students.length > 0 ? Math.max(...students.map(s => s.id)) + 1 : 1;
+                students.push({
+                    id: newId,
+                    name: name,
+                    class: studentClass,
+                    nis: nis
+                });
+                saveStudentsToFirebase(); // Simpan seluruh array students yang sudah diperbarui
+            }
+            
+            // loadStudentTable() dan loadPresensiList() akan dipanggil oleh listener Firebase
+            closeStudentModal();
+        });
+        
+        // Search and filter functionality
+        document.getElementById('searchStudent')?.addEventListener('input', loadStudentTable);
+        document.getElementById('classFilter')?.addEventListener('change', loadStudentTable);
+        document.getElementById('kelasFilter')?.addEventListener('change', loadPresensiList);
+
+        // Calendar navigation
+        document.getElementById('prevMonthBtn')?.addEventListener('click', previousMonth);
+        document.getElementById('nextMonthBtn')?.addEventListener('click', nextMonth);
+        
+        // Tab switching
+        document.getElementById('tab-presensi')?.addEventListener('click', () => showTab('presensi'));
+        document.getElementById('tab-data-siswa')?.addEventListener('click', () => showTab('data-siswa'));
+        document.getElementById('tab-rekap-presensi')?.addEventListener('click', () => showTab('rekap-presensi'));
+
+        // Action buttons
+        document.getElementById('saveAttendanceBtn')?.addEventListener('click', saveAttendance); // Sekarang hanya notifikasi
+        document.getElementById('resetAttendanceBtn')?.addEventListener('click', resetAttendance);
+        document.getElementById('addStudentBtn')?.addEventListener('click', showAddStudentModal);
+        document.getElementById('closeModal')?.addEventListener('click', closeStudentModal);
+        document.getElementById('generateReportBtn')?.addEventListener('click', generateReport);
+        document.getElementById('downloadCSVBtn')?.addEventListener('click', downloadCSV);
+    }
+</script>
 <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9626c32ab1269c33',t:'MTc1MzA1OTYzNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
