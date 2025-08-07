@@ -1,0 +1,1335 @@
+{
+  "classes": [
+    {
+      "id":"class-1",
+      "name":"Kelas 7A",
+      "students":[
+      {"id": "a001","name": "ACHMAD RAMADHANI"},
+      {"id": "a002","name": "ALFATIHA RAHMA"},
+      {"id": "a003","name": "ALIFA NUR CHALISA"},
+      {"id": "a004","name": "ALLENCIA VANGUARD RAPATOR"},
+      {"id": "a005","name": "ANGELIA MARGARETH"},
+      {"id": "a006","name": "ARSAVILLA AZZAHRA"},
+      {"id": "a007","name": "ARYSKA PUTRI KHOIRUNNISA"},
+      {"id": "a008","name": "CELIN MARTADIVARIA LUMBAN TOBING"},
+      {"id": "a009","name": "CRISTINE SYALOMITA"},
+      {"id": "a010","name": "DAANISH SULTAN SHAHPUTRA"},
+      {"id": "a011","name": "DEWA BUMI ANUGRAH MASWARA"},
+      {"id": "a012","name": "DINDA ZAKIA KIRANA"},
+      {"id": "a013","name": "FAIZAH LAYLA"},
+      {"id": "a014","name": "FAUZAN DANISWARA"},
+      {"id": "a015","name": "FRANSISKUS SECO NOLAN YUMANA"},
+      {"id": "a016","name": "IVANA AYUNDA NOVRIYANA"},
+      {"id": "a017","name": "JANEETA JEHAN"},
+      {"id": "a018","name": "KENICHI SETIAWAN"},
+      {"id": "a019","name": "LAURA ARCELIYA ZAHRA"},
+      {"id": "a020","name": "MAHER ATTHYA AL FATHIR"},
+      {"id": "a021","name": "MIKAILLA NUR RAMADHANI"},
+      {"id": "a022","name": "MUHAMMAD AZ ZAM ARYA PUTRA NUGROHO"},
+      {"id": "a023","name": "MUHAMMAD NUR ALAM PUTRA"},
+      {"id": "a024","name": "MUHAMMAD SHAN AL MUZAFFAR"},
+      {"id": "a025","name": "MUMTAZ MAURITS FAQIH TAMAMI"},
+      {"id": "a026","name": "NUR INTAN RAMADHANI"},
+      {"id": "a027","name": "NUR WAHDATUL SYAFITRI"},
+      {"id": "a028","name": "OLIVIA CRISTINA NAINGGOLAN"},
+      {"id": "a029","name": "RAIHANNUN DEVINA YASMIN"},
+      {"id": "a030","name": "REVALDO DHARMA MAHARDIKA"},
+      {"id": "a031","name": "ROYYAN RAMADHAN"},
+      {"id": "a032","name": "SHAHNAZ ALYA MUKHBITA SOERI"},
+      {"id": "a033","name": "XAVIERO ASYAM EL GHIFARY"},
+      {"id": "a034","name": "YUNITA"}
+    ]
+  },
+  {
+    "id": "class-2",
+    "name": "Kelas 7B",
+    "students": [
+    
+  {
+    "id": "b001",
+    "name": "ADEEVA DANINDRA ANANDINI PUTRI"
+  },
+  {
+    "id": "b002",
+    "name": "AFIFA NAHDA RAFANDA"
+  },
+  {
+    "id": "b003",
+    "name": "AHMAD FADHIL"
+  },
+  {
+    "id": "b004",
+    "name": "AISYAH SUCI RAMADHANI"
+  },
+  {
+    "id": "b005",
+    "name": "AKHDAN ATHAYA"
+  },
+  {
+    "id": "b006",
+    "name": "AKHMAD YUSUF MANDALA PUTRA"
+  },
+  {
+    "id": "b007",
+    "name": "ANDI ABID YAAZAR"
+  },
+  {
+    "id": "b008",
+    "name": "CHARISA VALERINA PUTRI"
+  },
+  {
+    "id": "b009",
+    "name": "CHARLOS KENZO AXCELL PINONTOAN"
+  },
+  {
+    "id": "b010",
+    "name": "FELLOZIO SULISTIO"
+  },
+  {
+    "id": "b011",
+    "name": "IVANDER BENEDICT SIHOMBING"
+  },
+  {
+    "id": "b012",
+    "name": "KHAYRA QANITA"
+  },
+  {
+    "id": "b013",
+    "name": "MAULIDA AWALLIYAH"
+  },
+  {
+    "id": "b014",
+    "name": "MUHAMMAD BENZEMA DIEN NIZAM ELHAQ"
+  },
+  {
+    "id": "b015",
+    "name": "MUHAMMAD HAFID ARFA DHAIFULLAH"
+  },
+  {
+    "id": "b016",
+    "name": "MUHAMMAD WAHYU"
+  },
+  {
+    "id": "b017",
+    "name": "MUHAMMAD ZAKI RAMADHAN"
+  },
+  {
+    "id": "b018",
+    "name": "MUNAWARATUL JANNAH"
+  },
+  {
+    "id": "b019",
+    "name": "NABILA SYAVIRA JAIMA"
+  },
+  {
+    "id": "b020",
+    "name": "NAYSA SAFIA"
+  },
+  {
+    "id": "b021",
+    "name": "NAZIFA RAZITA SAILA PAKPAHAN"
+  },
+  {
+    "id": "b022",
+    "name": "NINDIA RIZKY RAMADANI"
+  },
+  {
+    "id": "b023",
+    "name": "NURAINI AZZAHRA RAMADANI"
+  },
+  {
+    "id": "b024",
+    "name": "NURUL OKTAVIANI"
+  },
+  {
+    "id": "b025",
+    "name": "QOLBY RISCHANALIE"
+  },
+  {
+    "id": "b026",
+    "name": "RACHESA AFIKA HAGESTI"
+  },
+  {
+    "id": "b027",
+    "name": "RAHMAN BASWARA ANURAGA"
+  },
+  {
+    "id": "b028",
+    "name": "RAISYA ANINDYA WIJAYA"
+  },
+  {
+    "id": "b029",
+    "name": "REVALDI DHARMA MAHARDIKA"
+  },
+  {
+    "id": "b030",
+    "name": "RISKY ADITIYA"
+  },
+  {
+    "id": "b031",
+    "name": "RULLY FAUZI PUTRO"
+  },
+  {
+    "id": "b032",
+    "name": "SAFVIRA ARIYANTI"
+  },
+  {
+    "id": "b033",
+    "name": "SITI SHARA RUMANA"
+  },
+  {
+    "id": "b034",
+    "name": "YOSUA CHRISTIAN GUNAWAN"}
+  ]
+},
+{
+  "id": "class-3",
+  "name": "Kelas 7C",
+  "students": [
+  {
+    "id": "c001",
+    "name": "ALIF PUTRA ALWA"
+  },
+  {
+    "id": "c002",
+    "name": "ALINDA PERMATA PUTRI"
+  },
+  {
+    "id": "c003",
+    "name": "ANNISA RAMADHANI"
+  },
+  {
+    "id": "c004",
+    "name": "AOREL SANTIKA SEPTIANI"
+  },
+  {
+    "id": "c005",
+    "name": "CHAIRUL SEPTYA RAHMAN"
+  },
+  {
+    "id": "c006",
+    "name": "CLARA SINTA"
+  },
+  {
+    "id": "c007",
+    "name": "DESY ADELIA"
+  },
+  {
+    "id": "c008",
+    "name": "FAIQ NAUFAL AKRAM"
+  },
+  {
+    "id": "c009",
+    "name": "HAMDAN RASYID"
+  },
+  {
+    "id": "c010",
+    "name": "HARIS SAPUTRA"
+  },
+  {
+    "id": "c011",
+    "name": "INTAN SASKIA ASSYIFA"
+  },
+  {
+    "id": "c012",
+    "name": "MUHAMMAD ANGGA"
+  },
+  {
+    "id": "c013",
+    "name": "MUHAMMAD ARASYAH"
+  },
+  {
+    "id": "c014",
+    "name": "MUHAMMAD DANISH AL-FABIYAN"
+  },
+  {
+    "id": "c015",
+    "name": "MUHAMMAD FAEZA HABIBI"
+  },
+  {
+    "id": "c016",
+    "name": "MUHAMMAD FARIZ AZMI"
+  },
+  {
+    "id": "c017",
+    "name": "MUHAMMAD IQBAL SYAPUTRA"
+  },
+  {
+    "id": "c018",
+    "name": "MUHAMMAD KAMIL"
+  },
+  {
+    "id": "c019",
+    "name": "NADHIRA SEKAR HAPSARI"
+  },
+  {
+    "id": "c020",
+    "name": "NAJWA NAFISYAH"
+  },
+  {
+    "id": "c021",
+    "name": "NATASHA APRILIA"
+  },
+  {
+    "id": "c022",
+    "name": "NAURAH FARHANI MARWAN"
+  },
+  {
+    "id": "c023",
+    "name": "RAFAEL JAMAIKA RUNTU"
+  },
+  {
+    "id": "c024",
+    "name": "RENZHI RAVA PRASISTIA"
+  },
+  {
+    "id": "c025",
+    "name": "RISKY PRATAMA APRIADI"
+  },
+  {
+    "id": "c026",
+    "name": "SABRINA NOER IRAWAN"
+  },
+  {
+    "id": "c027",
+    "name": "SALWA CANTIKA"
+  },
+  {
+    "id": "c028",
+    "name": "SITI ZULAIKHA ALKHANZA"
+  },
+  {
+    "id": "c029",
+    "name": "SYAVIRA ALAMRIE"
+  },
+  {
+    "id": "c030",
+    "name": "VINNY EIDEL WEIS WEIS PASARIBU"
+  },
+  {
+    "id": "c031",
+    "name": "YASMIN MAISUN NABILLAH"
+  },
+  {
+    "id": "c032",
+    "name": "ZAHIRA AN NAZWA"
+  },
+  {
+    "id": "c033",
+    "name": "ZIVANA ANDRA DEWI"
+  },
+  {
+    "id": "c034",
+    "name": "ZIYADH KHOIRUM MIRZA LAISA"
+  }
+  ]
+},
+{
+  "id": "class-4",
+  "name": "Kelas 7D",
+  "students":[
+  {
+    "id": "d001",
+    "name": "ABDURRAHMAN ASHIL"
+  },
+  {
+    "id": "d002",
+    "name": "ADELIA AMIRA KURSANI"
+  },
+  {
+    "id": "d003",
+    "name": "ADI PRATAMA"
+  },
+  {
+    "id": "d004",
+    "name": "AHMAD AUFAR"
+  },
+  {
+    "id": "d005",
+    "name": "ANUGRAH MEIDIAN TITIANSYAH"
+  },
+  {
+    "id": "d006",
+    "name": "APRILIA AZ-ZAHRA"
+  },
+  {
+    "id": "d007",
+    "name": "ARYA GUSTIAN"
+  },
+  {
+    "id": "d008",
+    "name": "ATMA TRYA SULISTIA"
+  },
+  {
+    "id": "d009",
+    "name": "DANU PUTRA ADIFTA"
+  },
+  {
+    "id": "d010",
+    "name": "ELNONITA NUR AZSYIFA ANDARIZ"
+  },
+  {
+    "id": "d011",
+    "name": "FADHILA NURIL AINI"
+  },
+  {
+    "id": "d012",
+    "name": "GIBRAN ATHARIZZ ZHAFRAN JAYA"
+  },
+  {
+    "id": "d013",
+    "name": "HASYIFA GHANIYYU"
+  },
+  {
+    "id": "d014",
+    "name": "IKLILAH LAYYANA RIFDAH"
+  },
+  {
+    "id": "d015",
+    "name": "KARIN DARMAYANTI"
+  },
+  {
+    "id": "d016",
+    "name": "KEYLICIA AVINTA AZAHRA"
+  },
+  {
+    "id": "d017",
+    "name": "KHULUQIYAH ALYA"
+  },
+  {
+    "id": "d018",
+    "name": "MADINA DAVINA PUTRI NAINGGOLAN PARHUSIP"
+  },
+  {
+    "id": "d019",
+    "name": "MUHAMMAD AL BARRA WIDARYANTO"
+  },
+  {
+    "id": "d020",
+    "name": "MUHAMMAD AL IKHLAS"
+  },
+  {
+    "id": "d021",
+    "name": "MUHAMMAD IRVAN PRATAMA"
+  },
+  {
+    "id": "d022",
+    "name": "NAFATRA AZIZ RAMADHAN"
+  },
+  {
+    "id": "d023",
+    "name": "NUR AMIRA AFIFA"
+  },
+  {
+    "id": "d024",
+    "name": "PETRA MARCELINO DING LONG"
+  },
+  {
+    "id": "d025",
+    "name": "RAKKA ANDRIANUS"
+  },
+  {
+    "id": "d026",
+    "name": "RENO SETYA PRATAMA"
+  },
+  {
+    "id": "d027",
+    "name": "RITA NUR OKTAVIYATI"
+  },
+  {
+    "id": "d028",
+    "name": "SYAMIL ALFATHIR"
+  },
+  {
+    "id": "d029",
+    "name": "THALITA PUTRI HUMAIRA"
+  },
+  {
+    "id": "d030",
+    "name": "VARISA AZZARAH"
+  },
+  {
+    "id": "d031",
+    "name": "WA ODE CARMEN ADELIA"
+  },
+  {
+    "id": "d032",
+    "name": "ZAHRA AIRA RAMADHANI"
+  },
+  {
+    "id": "d033",
+    "name": "ZAHRA IRAWAN"
+  },
+  {
+    "id": "d034",
+    "name": "ZEIN AYU SALSABILA"
+  }
+  ]
+},
+{
+  "id": "class-5",
+  "name": "Kelas 7E",
+  "students": [
+  {
+    "id": "e001",
+    "name": "AGATA APRILIA PUTRI"
+  },
+  {
+    "id": "e002",
+    "name": "AHMAD PAHLUPI"
+  },
+  {
+    "id": "e003",
+    "name": "ANITA ANASTASYA"
+  },
+  {
+    "id": "e004",
+    "name": "ARYANATA TRI SEPTIYAN"
+  },
+  {
+    "id": "e005",
+    "name": "AYATULLAH WIRASHAKA"
+  },
+  {
+    "id": "e006",
+    "name": "AZALIA IVA NABILA"
+  },
+  {
+    "id": "e007",
+    "name": "AZZAHRA SABRIANI PUTRI"
+  },
+  {
+    "id": "e008",
+    "name": "BAYU ALFAHRIYANTO"
+  },
+  {
+    "id": "e009",
+    "name": "DWITA MAHDINANTI"
+  },
+  {
+    "id": "e010",
+    "name": "ENOVA MUTIARA CINTA"
+  },
+  {
+    "id": "e011",
+    "name": "GAVRILLA CARLENE MANUHUTU"
+  },
+  {
+    "id": "e012",
+    "name": "INTAN MUTIA SARI"
+  },
+  {
+    "id": "e013",
+    "name": "JUAN MANUEL MABUKA"
+  },
+  {
+    "id": "e014",
+    "name": "KHANSA RAMADHANY"
+  },
+  {
+    "id": "e015",
+    "name": "MUHAMAT FAJAR"
+  },
+  {
+    "id": "e016",
+    "name": "MUHAMMAD AKMAL HISYAM"
+  },
+  {
+    "id": "e017",
+    "name": "MUHAMMAD ALZAM ARFA'I"
+  },
+  {
+    "id": "e018",
+    "name": "MUHAMMAD AZZAM AUFA HIDAYAT"
+  },
+  {
+    "id": "e019",
+    "name": "MUHAMMAD DHAIFULLAH JUDAH"
+  },
+  {
+    "id": "e020",
+    "name": "MUHAMMAD FATHIR ALFARIZQI ARDIANSYAH"
+  },
+  {
+    "id": "e021",
+    "name": "MUHAMMAD IMAM HANAFI"
+  },
+  {
+    "id": "e022",
+    "name": "MUHAMMAD KENZIE AL FATIH"
+  },
+  {
+    "id": "e023",
+    "name": "MUHAMMAD RADITYA"
+  },
+  {
+    "id": "e024",
+    "name": "MUHAMMAD SAID NORHANI"
+  },
+  {
+    "id": "e025",
+    "name": "MUHAMMAD SYAFIN XAVIER"
+  },
+  {
+    "id": "e026",
+    "name": "NA'ILAH ANAYA PUTRI"
+  },
+  {
+    "id": "e027",
+    "name": "NAJWA NAJILA"
+  },
+  {
+    "id": "e028",
+    "name": "OLIVIA ANATASYA"
+  },
+  {
+    "id": "e029",
+    "name": "PEBBY PUTRI PURWANTO"
+  },
+  {
+    "id": "e030",
+    "name": "SASKIA CETTA BERNESSA"
+  },
+  {
+    "id": "e031",
+    "name": "SEPTIANA ATIKAH"
+  },
+  {
+    "id": "e032",
+    "name": "SHAZIA NUR FHATINA"
+  },
+  {
+    "id": "e033",
+    "name": "SITI NUR YUWANITA"
+  },
+  {
+    "id": "e034",
+    "name": "TRIYANA NUR ANGGRAINI"
+  }
+  ]
+},
+{
+  "id": "class-6",
+  "name":"Kelas 7F",
+  "students": [
+  {
+    "id": "f001",
+    "name": "AHMAD FARIZ BAIHAQI"
+  },
+  {
+    "id": "f002",
+    "name": "AINA SYAAKIRAH"
+  },
+  {
+    "id": "f003",
+    "name": "ALYA FARISYA ZAHRA"
+  },
+  {
+    "id": "f004",
+    "name": "ANGELYNN NEYSA GAUTAMA"
+  },
+  {
+    "id": "f005",
+    "name": "ASSYIFA PUTRI AURIN"
+  },
+  {
+    "id": "f006",
+    "name": "CLAIRINE ELZIRA JESICA ADELIN PANGGABEAN"
+  },
+  {
+    "id": "f007",
+    "name": "DEVY ATHENIA ZHULKIFLI"
+  },
+  {
+    "id": "f008",
+    "name": "FEBBY ANATASYA ANGERAINI"
+  },
+  {
+    "id": "f009",
+    "name": "FERAWATI"
+  },
+  {
+    "id": "f010",
+    "name": "FIKHANZA JAWAHIR"
+  },
+  {
+    "id": "f011",
+    "name": "FRANSISKUS RINO"
+  },
+  {
+    "id": "f012",
+    "name": "HAIDEE AYUNDRA WAHYUDI"
+  },
+  {
+    "id": "f013",
+    "name": "HALIMATU'SADIAH"
+  },
+  {
+    "id": "f014",
+    "name": "JEREMY CHRISTIAN PASARIBU"
+  },
+  {
+    "id": "f015",
+    "name": "MAULANA ISHAQ SYAHPUTRA"
+  },
+  {
+    "id": "f016",
+    "name": "MUHAMMAD AKMAL FIKRIYANUR"
+  },
+  {
+    "id": "f017",
+    "name": "MUHAMMAD LUTFI"
+  },
+  {
+    "id": "f018",
+    "name": "MUHAMMAD MARDIANSYAH"
+  },
+  {
+    "id": "f019",
+    "name": "MUHAMMAD NUR RAIHAN"
+  },
+  {
+    "id": "f020",
+    "name": "MUHAMMAD PADILAH"
+  },
+  {
+    "id": "f021",
+    "name": "MUHAMMAD RIZKI AL-FARIZI"
+  },
+  {
+    "id": "f022",
+    "name": "MUHAMMAD YASSER BUDIMAN"
+  },
+  {
+    "id": "f023",
+    "name": "MUHAMMAD YAZDAN RAYYAN"
+  },
+  {
+    "id": "f024",
+    "name": "MUHAMMAD YUSUF HENDRI"
+  },
+  {
+    "id": "f025",
+    "name": "NUR AZMI LATIFA"
+  },
+  {
+    "id": "f026",
+    "name": "QHILMAN TODING SIMANJUNTAK"
+  },
+  {
+    "id": "f027",
+    "name": "QIANA YASMINE"
+  },
+  {
+    "id": "f028",
+    "name": "RANGGA ADITYA"
+  },
+  {
+    "id": "f029",
+    "name": "RIZKY WARDANA"
+  },
+  {
+    "id": "f030",
+    "name": "RIZQI NUR AZZAHRA"
+  },
+  {
+    "id": "f031",
+    "name": "SEKAR LITUHAYU JANITRA"
+  },
+  {
+    "id": "f032",
+    "name": "SEPTIAN GAVIN PRATAMA"
+  },
+  {
+    "id": "f033",
+    "name": "TECTONA ALAIKA KUSNADI"
+  },
+  {
+    "id": "f034",
+    "name": "ZAHIYA AMIRA SOFYANA"
+  }
+  ]
+},
+{
+  "id": "class-7",
+  "name": "Kelas 7G",
+  "students":[
+  {
+    "id": "g001",
+    "name": "AKASYAH AZIZAN AGUNG SUPRIYADI"
+  },
+  {
+    "id": "g002",
+    "name": "ALIKA PUTRI SYAHRIAL"
+  },
+  {
+    "id": "g003",
+    "name": "ALMAQHVIRA KHAYLA SYAFIQ"
+  },
+  {
+    "id": "g004",
+    "name": "AMELIA"
+  },
+  {
+    "id": "g005",
+    "name": "ARGANTA PERSADA"
+  },
+  {
+    "id": "g006",
+    "name": "AURA ZAHRA ADYA MECCHA"
+  },
+  {
+    "id": "g007",
+    "name": "AURAA ASMAUL HUSNA"
+  },
+  {
+    "id": "g008",
+    "name": "BARACK JENOAH SIMON TAMAMILAN"
+  },
+  {
+    "id": "g009",
+    "name": "DIVANDRA MAWARDAH"
+  },
+  {
+    "id": "g010",
+    "name": "FATIN SHIDQIA AZZAHRA"
+  },
+  {
+    "id": "g011",
+    "name": "GILBERT FEBRIANTO SIBUEA"
+  },
+  {
+    "id": "g012",
+    "name": "HADEYASHU RAMADANI MARINA"
+  },
+  {
+    "id": "g013",
+    "name": "HAZWA HAZARIKA"
+  },
+  {
+    "id": "g014",
+    "name": "HILMIY IBRAHIM ARDITA"
+  },
+  {
+    "id": "g015",
+    "name": "KHAIRUL FAHMI"
+  },
+  {
+    "id": "g016",
+    "name": "MAISYARA CAHYANI SALSABILA"
+  },
+  {
+    "id": "g017",
+    "name": "MIKHA JELITA APRILIA SITORUS"
+  },
+  {
+    "id": "g018",
+    "name": "MUHAMMAD FATHIN YUSUF PAHLEVI"
+  },
+  {
+    "id": "g019",
+    "name": "MUHAMMAD FATIH AL DAQRA"
+  },
+  {
+    "id": "g020",
+    "name": "MUHAMMAD NAUFAL PATTIPAWAEJ"
+  },
+  {
+    "id": "g021",
+    "name": "MUHAMMAD RISKY LAIL"
+  },
+  {
+    "id": "g022",
+    "name": "MUHAMMAD SA'ID AZ-ZAINI"
+  },
+  {
+    "id": "g023",
+    "name": "MUHAMMAD ZIDAN BAIHAQI"
+  },
+  {
+    "id": "g024",
+    "name": "NATHANIEL OWEN SIMBOLON"
+  },
+  {
+    "id": "g025",
+    "name": "NAYLA ADINDA SALSABILA"
+  },
+  {
+    "id": "g026",
+    "name": "NIZAM MULKILAKBAR"
+  },
+  {
+    "id": "g027",
+    "name": "NUR MAULIDA ASSYIFA"
+  },
+  {
+    "id": "g028",
+    "name": "RADEN ANDINI TRI KUSUMAWARDANI"
+  },
+  {
+    "id": "g029",
+    "name": "RANDY DAMA PUTRA"
+  },
+  {
+    "id": "g030",
+    "name": "RESSI BEPISSTY STIADANA"
+  },
+  {
+    "id": "g031",
+    "name": "SALMA NAFISYAH OKTAVIA"
+  },
+  {
+    "id": "g032",
+    "name": "SITI AULIA ADHA"
+  },
+  {
+    "id": "g033",
+    "name": "TSAQIIF ARYA PUTRA PRAYOGO"
+  },
+  {
+    "id": "g034",
+    "name": "WISNU HAYFA RAMADHAN"
+  }
+  ]
+},
+{
+  "id": "class-8",
+  "name": "Kelas 7H",
+  "students":[
+  {
+    "id": "h001",
+    "name": "ADINDA PUJI LESTARI"
+  },
+  {
+    "id": "h002",
+    "name": "ALEXANDER GEREJA REBON"
+  },
+  {
+    "id": "h003",
+    "name": "ATA MUHAMMAD ARFA"
+  },
+  {
+    "id": "h004",
+    "name": "AUFAA MUHAMMAD HARTAWAN"
+  },
+  {
+    "id": "h005",
+    "name": "CHARISSA FAYOLA NABILA"
+  },
+  {
+    "id": "h006",
+    "name": "CHELSEA AMELIA ANJANI"
+  },
+  {
+    "id": "h007",
+    "name": "Dihya Qalbi"
+  },
+  {
+    "id": "h008",
+    "name": "DINDA AISYA KIRANA"
+  },
+  {
+    "id": "h009",
+    "name": "FARIS BIALFIS FAIRUS"
+  },
+  {
+    "id": "h010",
+    "name": "FITRI GHAZIYA HAFIZA"
+  },
+  {
+    "id": "h011",
+    "name": "GANENDRA AL GHIFARI PURNAMA PUTRA"
+  },
+  {
+    "id": "h012",
+    "name": "HALIMATU'SADIAH"
+  },
+  {
+    "id": "h013",
+    "name": "HARYANI"
+  },
+  {
+    "id": "h014",
+    "name": "HERO FEBRO SETIAWAN"
+  },
+  {
+    "id": "h015",
+    "name": "INDIRA INTAN VHELISA"
+  },
+  {
+    "id": "h016",
+    "name": "KEISHA MAHARANI PUTRI"
+  },
+  {
+    "id": "h017",
+    "name": "LINTANG AYU GUMELAR JAGAD"
+  },
+  {
+    "id": "h018",
+    "name": "MAZEA HAWA VALENCIA"
+  },
+  {
+    "id": "h019",
+    "name": "MUHAMMAD AYYUB AKSYAF"
+  },
+  {
+    "id": "h020",
+    "name": "MUHAMMAD CHAIRUL HUDDA"
+  },
+  {
+    "id": "h021",
+    "name": "MUHAMMAD DAFFA KHALID RAMADHANI"
+  },
+  {
+    "id": "h022",
+    "name": "MUHAMMAD RASYID SANTOSO"
+  },
+  {
+    "id": "h023",
+    "name": "MUHAMMAD REYHAN"
+  },
+  {
+    "id": "h024",
+    "name": "MUHAMMAD YUSUF"
+  },
+  {
+    "id": "h025",
+    "name": "MUHAMMAD ZAKI RAQILLA"
+  },
+  {
+    "id": "h026",
+    "name": "NABILA MAIZA PUTRI SIREGAR"
+  },
+  {
+    "id": "h027",
+    "name": "NAURA DAVINA"
+  },
+  {
+    "id": "h028",
+    "name": "NAYLA SHERA FIDELA"
+  },
+  {
+    "id": "h029",
+    "name": "NUGI FADILAH RAMADAN"
+  },
+  {
+    "id": "h030",
+    "name": "RABIATUL ZAKINA AFDAWIYAH"
+  },
+  {
+    "id": "h031",
+    "name": "RAHMA DWISAPUTRA"
+  },
+  {
+    "id": "h032",
+    "name": "RAKHA PRASTYONO"
+  },
+  {
+    "id": "h033",
+    "name": "SITI FATIMATUZ ZAHRAH"
+  },
+  {
+    "id": "h034",
+    "name": "ZANETA WELIN SO"
+  }
+  ]
+},
+{
+  "id": "class-9",
+  "name": "Kelas 7I",
+  "students":[
+  {
+    "id": "i001",
+    "name": "ADNAN RASYID MAULANA"
+  },
+  {
+    "id": "i002",
+    "name": "AFIKA ZILZIAN PUTRI"
+  },
+  {
+    "id": "i003",
+    "name": "AHMAD SUHAIL AMIN"
+  },
+  {
+    "id": "i004",
+    "name": "AL FAIRUS ALFARIZI"
+  },
+  {
+    "id": "i005",
+    "name": "ALENA ZAHWA ATHIFA"
+  },
+  {
+    "id": "i006",
+    "name": "ALFAREZEL RAJENDRA NUR"
+  },
+  {
+    "id": "i007",
+    "name": "ARFIN RIFATULLAH"
+  },
+  {
+    "id": "i008",
+    "name": "ATA MUHAMMAD AZKA"
+  },
+  {
+    "id": "i009",
+    "name": "AULIA PUTRI"
+  },
+  {
+    "id": "i010",
+    "name": "AZZAM ELYAZAR"
+  },
+  {
+    "id": "i011",
+    "name": "CASSYFA DIFARA"
+  },
+  {
+    "id": "i012",
+    "name": "FARREL ZAIDAN AMZAR"
+  },
+  {
+    "id": "i013",
+    "name": "LIYANA ZAHIRAH"
+  },
+  {
+    "id": "i014",
+    "name": "MEILANIE DESWITA TAMEON"
+  },
+  {
+    "id": "i015",
+    "name": "MELATI DALILA"
+  },
+  {
+    "id": "i016",
+    "name": "MUHAMMAD ABDIL MIRZA"
+  },
+  {
+    "id": "i017",
+    "name": "MUHAMMAD ISMUL AZAM"
+  },
+  {
+    "id": "i018",
+    "name": "MUHAMMAD YUSUF"
+  },
+  {
+    "id": "i019",
+    "name": "MUSDALIFAH"
+  },
+  {
+    "id": "i020",
+    "name": "MUZDALIFAH AZ-ZAHRA"
+  },
+  {
+    "id": "i021",
+    "name": "NADINE ASSYIFA"
+  },
+  {
+    "id": "i022",
+    "name": "NAYLA ASFIRA AGUN"
+  },
+  {
+    "id": "i023",
+    "name": "NUR AZIM SYAIF"
+  },
+  {
+    "id": "i024",
+    "name": "NUR DAFFA AQILA KRISWANDY PUTRA"
+  },
+  {
+    "id": "i025",
+    "name": "NUR HAFIFAH"
+  },
+  {
+    "id": "i026",
+    "name": "PARHAN"
+  },
+  {
+    "id": "i027",
+    "name": "QONITHA ASSYFA RIESKY"
+  },
+  {
+    "id": "i028",
+    "name": "RAISHA KAMILA ZAHRA"
+  },
+  {
+    "id": "i029",
+    "name": "SAJILA SALMA"
+  },
+  {
+    "id": "i030",
+    "name": "TIARA JURIKA"
+  },
+  {
+    "id": "i031",
+    "name": "ULQIA SAHARA"
+  },
+  {
+    "id": "i032",
+    "name": "YUMI CHIKA OKTAVIANI"
+  },
+  {
+    "id": "i033",
+    "name": "ZAHRA NUR RATIFA"
+  },
+  {
+    "id": "i034",
+    "name": "ZATRIA RAMADHAN"
+  }
+  ]
+},
+{
+  "id": "class-10",
+  "name": "Kelas 7J",
+  "students":[
+  {
+    "id": "j001",
+    "name": "AAFIYAH CHANDINI PUTERIA KAPLALE"
+  },
+  {
+    "id": "j002",
+    "name": "ABDUL RIZKI RAMADHAN"
+  },
+  {
+    "id": "j003",
+    "name": "ACHMAD GHAZALI"
+  },
+  {
+    "id": "j004",
+    "name": "ADELFA ALIKA ADNI"
+  },
+  {
+    "id": "j005",
+    "name": "AL KHALIFI ZIKRI"
+  },
+  {
+    "id": "j006",
+    "name": "AMARA NADHIFA SHAQILA"
+  },
+  {
+    "id": "j007",
+    "name": "ANDI AHMAD AUFAR"
+  },
+  {
+    "id": "j008",
+    "name": "ARKHANA DEVA SASHIKIRANA"
+  },
+  {
+    "id": "j009",
+    "name": "ASRINAZ AZIZAH BALQIS"
+  },
+  {
+    "id": "j010",
+    "name": "DAANIA ASHEEQA HABIBI"
+  },
+  {
+    "id": "j011",
+    "name": "DAVID MASTERHEZIA LAYUK ALLO"
+  },
+  {
+    "id": "j012",
+    "name": "FADILLA NUR USMI"
+  },
+  {
+    "id": "j013",
+    "name": "GEISHIA FRANKLING"
+  },
+  {
+    "id": "j014",
+    "name": "IKRA ZUL ZAKARIA"
+  },
+  {
+    "id": "j015",
+    "name": "ILYAS ALFARIZIE"
+  },
+  {
+    "id": "j016",
+    "name": "KAFFA RAFIF SULTANA"
+  },
+  {
+    "id": "j017",
+    "name": "MARIANO OKTA VIANUS NAI"
+  },
+  {
+    "id": "j018",
+    "name": "MAULITA DESYANA"
+  },
+  {
+    "id": "j019",
+    "name": "MIFTAHUL RIZKY"
+  },
+  {
+    "id": "j020",
+    "name": "MOETYA HANUM RHAMANDA"
+  },
+  {
+    "id": "j021",
+    "name": "MUHAMMAD AFFANDI"
+  },
+  {
+    "id": "j022",
+    "name": "MUHAMMAD FARID ATTALLAH"
+  },
+  {
+    "id": "j023",
+    "name": "MUHAMMAD RIDHO"
+  },
+  {
+    "id": "j024",
+    "name": "MUHAMMAD ZIDANE AL RIDHWAN"
+  },
+  {
+    "id": "j025",
+    "name": "NABILA FEBIANTI"
+  },
+  {
+    "id": "j026",
+    "name": "NAEEMA ZAHEEN"
+  },
+  {
+    "id": "j027",
+    "name": "NAUFAL DHAIFULLAH"
+  },
+  {
+    "id": "j028",
+    "name": "PUTRI AISYAH AZAHROH"
+  },
+  {
+    "id": "j029",
+    "name": "RAHMAT FEBRIANSYAH"
+  },
+  {
+    "id": "j030",
+    "name": "REGINA AULIA AZ-ZAHRA"
+  },
+  {
+    "id": "j031",
+    "name": "RISKI FATIR ABDULLAH"
+  },
+  {
+    "id": "j032",
+    "name": "SILVIANA BAGE KAHA"
+  },
+  {
+    "id": "j033",
+    "name": "YESIKA KURNIAWAN"
+  },
+  {
+    "id": "j034",
+    "name": "YHARA AQHILA PASA"
+  }
+    ]
+  }
+],
+"subjects": [
+    { "id": "sub-1", "name": "Matematika" },
+    { "id": "sub-2", "name": "Bahasa Indonesia" },
+    { "id": "sub-3", "name": "Ilmu Pengetahuan Alam" },
+    { "id": "sub-4", "name": "Sejarah" },
+    { "id": "sub-5", "name": "Fisika" },
+    { "id": "sub-6", "name": "Informatika" },
+    { "id": "sub-7", "name": "Bahasa Inggris" },
+    { "id": "sub-8", "name": "Agama" },
+    { "id": "sub-9", "name": "Ilmu Pengetahuan Sosial" },
+    { "id": "sub-10", "name": "PPKn" },
+    { "id": "sub-11", "name": "Olahraga" }
+  ]
+}
